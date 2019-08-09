@@ -1,0 +1,21 @@
+/* colors */
+
+orange: e4ad5d
+light yellow: fff2c8
+pink: e08ab1
+dark pink: 6a1b4a
+dark violet: 4d0058
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 50px;
+    background: #fff2c8
+}
+.logo {
+
+}
