@@ -4,14 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Посуточная аренда жилья</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Playfair+Display:400,700i,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="">
+    <header class="main-header">
+        <div class="header__logo">
+            <a href="#"><img src="img/logo.png" alt="DAILY"></a>
+        </div>
+        <nav role="navigation">
+            <ul class="main-navigation">
+                <a href="#main-search"><li class="main-navigation__item">Поиск</li></a>
+                <a href="#main-recommend"><li class="main-navigation__item">Рекомедации</li></a> 
+                <a href="#main-advantages"><li class="main-navigation__item">Преимущества</li></a>
+            </ul>
+        </nav>
+        <button role="button" class="header__enter-btn">Вход</button>
+        <div class="header__user-info">
+            <img src="img/default_avatar.png" alt="" class="header__user-photo">
+            <p class="header__user-name">Julia fe</p>
         </div>
     </header>
+    <main>
+        <section class="main-section" id="main-search">
+            <h1 role="heading">Поиск посуточного жилья</h1>
+            <h2>Множество вариантов заселения специально для Вас!</h2>
+            <form action="/rentals/index.html" class="search-form">
+                <div class="search-form-content">
+                    <div class="main__search-input-city">
+                        <span class="search-form-info">Выбор города</span>
+                        <input type="text" class="main__city-input">
+                        <span class="icon-location"></span>
+                    </div>
+                    <div class="main__search-input-arrival">
+                        <span class="search-form-info">Дата заезда</span>
+                        <span class="icon-calendar"></span>
+                    </div>
+                    <div class="main__search-input-departure">
+                        <span class="search-form-info">Дата отъезда</span>
+                        <span class="icon-calendar"></span>
+                    </div>
+                    <input type="submit" value="Поиск жилья" class="main__search-btn">
+                </div>
+            </form>
+            
+        </section>
+    </main>
 </body>
 </html>
