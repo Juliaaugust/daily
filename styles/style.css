@@ -25,6 +25,9 @@ dark violet: 4d0058
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header__logo {
@@ -54,7 +57,7 @@ dark violet: 4d0058
     transition: 0.5s;
 }
 
-li:not(.last-nav-li) {
+.main-navigation__item:not(.last-nav-li) {
     border-right: 1px solid #92256650;
 }
 
@@ -105,46 +108,46 @@ li:not(.last-nav-li) {
     display: none;
 }
 
-/* main */
+/* main search */
 
-.main-section {
-    background: url(../img/main_bg.jpg) center/cover;
+.search-section {
+    background: url(../img/main/main_bg.jpg) center/cover;
     height: 650px;
 }
 
-.main-section::after {
+.search-section::after {
 	content: '';
 	position: absolute;
 	top: 54px;
 	left: 0;
 	width: 100%;
-	height: 100%;
-    background: #fff2c869;
+	height: 650px;
+    background: #f9f0d627;
 }
 
-.main-section h1,
-.main-section h2,
+.search-section h1,
+.search-section h3,
 .search-form {
     position: relative;
 	z-index: 1;
 }
 
-.main-section h1,
-.main-section h2 {
+.search-section h1,
+.search-section h3 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    /* color: rgb(19, 62, 77); */
     color: #053841;
+    text-shadow: 1px 1px 2px #021118, 0 0 1em #bfe8f0;
 }
 
-.main-section h1 {
+.search-section h1 {
     font-size: calc(1rem + 3.8vw);
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
-.main-section h2 {
+.search-section h3 {
     font-style: italic;
-    font-size: calc(0.8rem + 1.1vw);
+    font-size: calc(0.75rem + 1.1vw);
     padding-bottom: 80px;
 }
 
@@ -165,6 +168,7 @@ li:not(.last-nav-li) {
 
 .search-form-info {
     color: #032329;
+    text-shadow: 1px 1px 3px #bed8e4;
     font-size: 16px;
     position: relative;
     left: 15px;
@@ -174,7 +178,7 @@ li:not(.last-nav-li) {
     width: 220px;
     height: 60px;
     padding: 5px 10px;
-    margin: 5px 10px;
+    margin: 5px;
     border-radius: 8px;
     color: #015f70;
     font-size: 20px;
@@ -192,11 +196,43 @@ li:not(.last-nav-li) {
     background: linear-gradient(0deg, #7e4b6a 0%, #e08ab1 100%);
     border: #ad807b;
     border-radius: 8px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .main__search-btn:hover {
     cursor: pointer;
     color: rgb(61, 13, 41);
     background: linear-gradient(0deg, #6b3d59 0%, #c9759b 100%);
+}
+
+.sections-container {
+    margin: 0 30px;
+    padding: 10px;
+    background: #fff2c8;
+}
+
+.main-section h2 {
+    font-family: 'Playfair Display', serif;
+}
+/* main recommend */
+
+.recommend-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recommend-card {
+    box-shadow: 0 0 10px #c9759b;
+    padding: 10px;
+    margin: 5px 2px;
+}
+
+.recommend-img {
+    width: 300px;
+}
+
+.advantages-icon {
+    width: 100px;
 }
