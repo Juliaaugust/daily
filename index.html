@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
+    <title>DAILY rental housing</title>
 
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Playfair+Display:400,700i,900&display=swap" rel="stylesheet">
 </head>
@@ -15,15 +16,28 @@
         </div>
         <nav role="navigation">
             <ul class="main-navigation">
-                <a href="#main-search"><li class="main-navigation__item">Поиск</li></a>
-                <a href="#main-recommend"><li class="main-navigation__item">Рекомедации</li></a> 
-                <a href="#main-advantages"><li class="main-navigation__item">Преимущества</li></a>
+                <li class="main-navigation__item">
+                    <img src="img/icons/search.svg" alt="" class="nav-icon">
+                    <a href="#main-search">Поиск</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/recommend.svg" alt="" class="nav-icon">
+                    <a href="#main-recommend">Рекомедации</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/advantages.svg" alt="" class="nav-icon">
+                    <a href="#main-advantages">Преимущества</a>
+                </li>
+                <li class="main-navigation__item last-nav-li">
+                    <img src="img/icons/contacts.svg" alt="" class="nav-icon">
+                    <a href="#main-contacts">Контакты</a>
+                </li>
             </ul>
         </nav>
         <button role="button" class="header__enter-btn">Вход</button>
         <div class="header__user-info">
             <img src="img/default_avatar.png" alt="" class="header__user-photo">
-            <p class="header__user-name">Julia fe</p>
+            <p class="header__user-name">Julia</p>
         </div>
     </header>
     <main>
@@ -32,17 +46,19 @@
             <h2>Множество вариантов заселения специально для Вас!</h2>
             <form action="/rentals/index.html" class="search-form">
                 <div class="search-form-content">
-                    <div class="main__search-input-city">
-                        <span class="search-form-info">Выбор города</span>
-                        <input type="text" class="main__city-input">
+                    <div class="main__search-city">
+                        <div class="search-form-info">Выбор города</div>
+                        <input type="text" class="main__input city-input">
                         <span class="icon-location"></span>
                     </div>
-                    <div class="main__search-input-arrival">
-                        <span class="search-form-info">Дата заезда</span>
+                    <div class="main__search-arrival">
+                        <div class="search-form-info">Дата заезда</div>
+                        <input type="date" class="main__input arrival-input">
                         <span class="icon-calendar"></span>
                     </div>
-                    <div class="main__search-input-departure">
-                        <span class="search-form-info">Дата отъезда</span>
+                    <div class="main__search-departure">
+                        <div class="search-form-info">Дата отъезда</div>
+                        <input type="date" class="main__input departure-input">
                         <span class="icon-calendar"></span>
                     </div>
                     <input type="submit" value="Поиск жилья" class="main__search-btn">
