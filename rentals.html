@@ -11,65 +11,173 @@
     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header class="main-header">
-            <div class="header__logo">
-                <a href="#"><img src="img/logo.png" alt="DAILY"></a>
-            </div>
-            <nav role="navigation">
-                <ul class="main-navigation">
-                    <li class="main-navigation__item">
-                        <img src="img/icons/search.svg" alt="" class="nav-icon">
-                        <a href="#main-search">Поиск</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <img src="img/icons/recommend.svg" alt="" class="nav-icon">
-                        <a href="#main-recommend">Рекомедации</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <img src="img/icons/advantages.svg" alt="" class="nav-icon">
-                        <a href="#main-advantages">Преимущества</a>
-                    </li>
-                    <li class="main-navigation__item last-nav-li">
-                        <img src="img/icons/contacts.svg" alt="" class="nav-icon">
-                        <a href="#main-contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <button role="button" class="header__enter-btn">Вход</button>
-            <div class="header__user-info">
-                <img src="img/default_avatar.png" alt="" class="header__user-photo">
-                <p class="header__user-name">Julia</p>
-            </div>
-        </header>
+    <header class="main-header">
+        <div class="header__logo">
+            <a href="#"><img src="img/logo.png" alt="DAILY"></a>
+        </div>
+        <nav role="navigation">
+            <ul class="main-navigation">
+                <li class="main-navigation__item">
+                    <img src="img/icons/search.svg" alt="" class="nav-icon">
+                    <a href="#main-search">Поиск</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/recommend.svg" alt="" class="nav-icon">
+                    <a href="#main-recommend">Рекомедации</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/advantages.svg" alt="" class="nav-icon">
+                    <a href="#main-advantages">Преимущества</a>
+                </li>
+                <li class="main-navigation__item last-nav-li">
+                    <img src="img/icons/contacts.svg" alt="" class="nav-icon">
+                    <a href="#main-contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button role="button" class="header__enter-btn">Вход</button>
+        <div class="header__user-info">
+            <img src="img/default_avatar.png" alt="" class="header__user-photo">
+            <p class="header__user-name">Julia</p>
+        </div>
+    </header>
 
-        <main>
-            <div class="variants">
+    <div class="page-wrapper">
+        <aside class="rentals-aside">
+            <div class="select-sorting-container">
+                <select class="select-sorting">
+                    <option class="select-sorting__option">Сортировка по умолчанию</option>
+                    <option class="select-sorting__option">По возрастанию цены</option>
+                    <option class="select-sorting__option">По убыванию цены</option>
+                    <option class="select-sorting__option">По рейтингу</option>
+                </select>
+            </div>
+
+            <div class="options-container">
+                <div class="city-option">
+                    Город:
+                    <input type="text" name="city-input" value="Москва">
+                </div>
+                <div class="arrival-option">
+                    Дата заезда:
+                    <input type="date" name="arrival-input">
+                </div>
+                <div class="departure-option">
+                    Дата отъезда:
+                    <input type="date" name="departure-input">
+                </div>
+                <div class="price-option">
+                    Цена за сутки:
+                    От <input type="number" min="0" name="min-price-input">
+                    До <input type="number" min="0" name="max-price-input">
+                </div>
+                <div class="rating-option">
+                    Минимальный рейтинг:
+                    <input type="range" min="0" max="5" step="1" value="4"> 
+                </div>
+            </div>
+        </aside>
+
+        <main class="rentals-main">
+            <div class="variants-count">
                 <span class="variants-count">25</span> вариантов
             </div>
-            <div class="variants">
+            <div class="all-variants">
                 <ul class="variants-list">
                     <li class="variants-list__item">
                         <div class="variant-card">
-                            .
+                            <div class="carousel-wrapper">
+                                <img src="img/housing_variants/var_0_1.jpg" alt="" class="variant-image">
+                            </div>
+                            <div class="housing-description">
+                                <a href="./housing.html">
+                                    <h2 class="housing-name">Двухкомнатная квартира</h2>
+                                    <div class="housing-address">
+                                        <img src="img/icons/location.svg" alt="">
+                                        Москва, Старая Басманная, 5
+                                    </div>
+                                    <div class="housing-price">
+                                        <img src="img/icons/price.svg" alt="">
+                                        <span class="price-card-value">8 000</span> ₽ за сутки
+                                    </div>
+                                    <ul class="stars-rating">
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star-black" src="img/icons/star-black.png" alt="">
+                                        </li>
+
+                                        <span class="rating-value">4</span>
+                                    </ul>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </main>
+    </div> <!--page-wrapper-->
 
-        <aside>
-            <div class="select-sorting">
-                <ul class="sortings-list">
-                    <li class="sortings-list__item">Сортировка по умолчанию</li>
-                    <li class="sortings-list__item">По возрастанию цены</li>
-                    <li class="sortings-list__item">По убыванию цены</li>
-                    <li class="sortings-list__item">По рейтингу</li>
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li class="foolter-col-list__item"><a href="#">Личный кабинет</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Служба поддержки</a></li>
+                    </ul>
+                </div>
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li>Арендодателям</li>
+                        <li class="foolter-col-list__item"><a href="#">Как сдавать свое жилье</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Разместить объявление</a></li>
+                    </ul>
+                </div>
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li>Гостям</li>
+                        <li class="foolter-col-list__item"><a href="#">Как бронировать жилье</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Гарантии заселения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-line"/>
+            <div class="footer-bottom">
+                <div class="copy">
+                    &copy; 2019. DAILY rental housing
+                </div>
+                <ul class="socials-list">
+                    <li class="socials-list__item">
+                        <a href="https://vk.com" target="_blank">
+                            <img src="img/icons/socials/vk.png" alt="vk">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="img/icons/socials/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="img/icons/socials/twitter.png" alt="twitter">
+                        </a>
+                    </li>
                 </ul>
             </div>
-
-
-        </aside>
-
-
+        </div>
+    </footer>
 </body>
 </html>

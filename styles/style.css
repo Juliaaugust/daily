@@ -10,10 +10,20 @@ dark violet: 4d0058
 
 */
 
+
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Istok Web', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 /* header */
@@ -36,7 +46,6 @@ dark violet: 4d0058
 }
 
 .main-navigation {
-    list-style: none;
     border-left: 1px solid #92256650;
     border-right: 1px solid #92256650;
     padding: 5px;
@@ -66,7 +75,6 @@ dark violet: 4d0058
 } */
 
 .main-navigation a {
-    text-decoration: none;
     color: #2e0c20;
 }
 
@@ -122,22 +130,17 @@ dark violet: 4d0058
     align-items: center;
 }
 
-.foolter-col-list {
-    list-style: none;
-}
-
 .foolter-col-list__item {
     color: #2e0c20;
 }
 
 .foolter-col-list a {
-    text-decoration: none;
     color: #f8d0a3;
 }
 
 .foolter-col-list a:hover {
-    text-decoration: none;
     color: #f8d0a367;
+    transition: 0.4s;
 }
 
 .footer-line {

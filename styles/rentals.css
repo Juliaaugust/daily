@@ -1,0 +1,39 @@
+.page-wrapper {
+    margin: 15px 30px;
+    display: flex;
+    min-height: calc(100vh - 250px);
+}
+
+.rentals-aside {
+    width: 30%;
+}
+
+.rentals-main {
+    width: 70%;
+}
+
+
+
+
+
+
+.stars-rating__item {
+    display: inline-block;
+}
+
+.stars-rating__item > img {
+    width: 15px;
+}
+
+.icon-star-black {
+    opacity: 0.5;
+}
+
+.carousel-wrapper > img {
+    width: 300px;
+}
+
+.housing-address > img,
+.housing-price > img {
+    width: 25px;
+}
