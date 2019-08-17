@@ -1,21 +1,87 @@
 .page-wrapper {
     margin: 15px 30px;
     display: flex;
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 250px); /* прижать футер к низу, если вариантов мало */
 }
 
 .rentals-aside {
     width: 30%;
+    padding: 10px 25px;
+    margin-right: 10px;
+    background: #e0e9eb;
+    border-radius: 6px;
+    box-shadow: -8px -3px 15px #97b4b8;
 }
 
 .rentals-main {
     width: 70%;
+    padding: 10px 25px;
+    background: #e0e9eb;
+    border-radius: 6px;
+    box-shadow: 8px -3px 15px #97b4b8;
+}
+
+/* aside */
+
+.options-container {
+    margin: 25px 10px;
+}
+
+.options-container > div {
+    margin-bottom: 25px;
+    color: #2e0c20;
+    font-size: 18px;
+}
+
+.options-container > div > input {
+    height: 25px;
+    width: 260px;
+    color: #2e0c20;
+    font-size: 16px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.options-container > .price-option input {
+    width: 92px;
+}
+
+/* main */
+
+.select-sorting-container {
+    text-align: center;
+}
+
+.select-sorting {
+    height: 30px;
+    font-size: 16px;
+    color: #2e0c20;
 }
 
 
+.variants-count {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #58324a;
+}
 
+.variant-card {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px #97b4b8;
+    background: #fff2c8;
+}
 
+.housing-description a {
+    color: #2e0c20;
+}
 
+.housing-description .housing-name {
+    color: #6a1b4a;
+}
 
 .stars-rating__item {
     display: inline-block;
@@ -33,7 +99,32 @@
     width: 300px;
 }
 
+.carousel-wrapper {
+    position: relative;
+    padding-right: 20px;
+}
+
+.carousel-wrapper::before {
+    content: '1/2';
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    z-index: 1;
+    background: #58324a;
+    color: #fff;
+    border-radius: 10px;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 4px;
+}
+
 .housing-address > img,
 .housing-price > img {
     width: 25px;
+    position: relative;
+    top: 6px;
 }

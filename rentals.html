@@ -55,32 +55,32 @@
 
             <div class="options-container">
                 <div class="city-option">
-                    Город:
+                    <p>Город:</p>
                     <input type="text" name="city-input" value="Москва">
                 </div>
                 <div class="arrival-option">
-                    Дата заезда:
+                    <p>Дата заезда:</p>
                     <input type="date" name="arrival-input">
                 </div>
                 <div class="departure-option">
-                    Дата отъезда:
+                    <p>Дата отъезда:</p>
                     <input type="date" name="departure-input">
                 </div>
                 <div class="price-option">
-                    Цена за сутки:
+                    <p>Цена за сутки:</p>
                     От <input type="number" min="0" name="min-price-input">
                     До <input type="number" min="0" name="max-price-input">
                 </div>
                 <div class="rating-option">
-                    Минимальный рейтинг:
-                    <input type="range" min="0" max="5" step="1" value="4"> 
+                    <p>Минимальный рейтинг:</p>
+                    <input type="range" min="1" max="5" step="1" value="3"> 
                 </div>
             </div>
         </aside>
 
         <main class="rentals-main">
             <div class="variants-count">
-                <span class="variants-count">25</span> вариантов
+                Найдено вариантов: <span class="variants-count">3</span>
             </div>
             <div class="all-variants">
                 <ul class="variants-list">
@@ -90,7 +90,7 @@
                                 <img src="img/housing_variants/var_0_1.jpg" alt="" class="variant-image">
                             </div>
                             <div class="housing-description">
-                                <a href="./housing.html">
+                                <a href="./housing.html" target="_blank">
                                     <h2 class="housing-name">Двухкомнатная квартира</h2>
                                     <div class="housing-address">
                                         <img src="img/icons/location.svg" alt="">
@@ -117,7 +117,87 @@
                                             <img class="icon-star-black" src="img/icons/star-black.png" alt="">
                                         </li>
 
-                                        <span class="rating-value">4</span>
+                                        <span class="review-count">4</span>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="variants-list__item">
+                        <div class="variant-card">
+                            <div class="carousel-wrapper">
+                                <img src="img/housing_variants/var_1_1.jpg" alt="" class="variant-image">
+                            </div>
+                            <div class="housing-description">
+                                <a href="./housing.html" target="_blank">
+                                    <h2 class="housing-name">Апартаменты</h2>
+                                    <div class="housing-address">
+                                        <img src="img/icons/location.svg" alt="">
+                                        Москва, Новый Арбат, 28
+                                    </div>
+                                    <div class="housing-price">
+                                        <img src="img/icons/price.svg" alt="">
+                                        <span class="price-card-value">12 500</span> ₽ за сутки
+                                    </div>
+                                    <ul class="stars-rating">
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+
+                                        <span class="review-count">2</span>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="variants-list__item">
+                        <div class="variant-card">
+                            <div class="carousel-wrapper">
+                                <img src="img/housing_variants/var_2_1.jpg" alt="" class="variant-image">
+                            </div>
+                            <div class="housing-description">
+                                <a href="./housing.html" target="_blank">
+                                    <h2 class="housing-name">1-комнатная квартира</h2>
+                                    <div class="housing-address">
+                                        <img src="img/icons/location.svg" alt="">
+                                        Москва, Тверская ул., 7
+                                    </div>
+                                    <div class="housing-price">
+                                        <img src="img/icons/price.svg" alt="">
+                                        <span class="price-card-value">12 500</span> ₽ за сутки
+                                    </div>
+                                    <ul class="stars-rating">
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star" src="img/icons/star.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                                <img class="icon-star-black" src="img/icons/star-black.png" alt="">
+                                        </li>
+                                        <li class="stars-rating__item">
+                                            <img class="icon-star-black" src="img/icons/star-black.png" alt="">
+                                        </li>
+
+                                        <span class="review-count">6</span>
                                     </ul>
                                 </a>
                             </div>

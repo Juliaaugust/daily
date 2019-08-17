@@ -99,7 +99,7 @@
 .sections-container {
     margin: 15px 30px;
     padding: 10px;
-    background: #c3d1d3;
+    background: #e0e9eb;
     border-radius: 6px;
     box-shadow: 8px -3px 15px #69878b;
 }
@@ -109,7 +109,7 @@
     margin: 80px 20px;
     border: 1px solid #015f705d;
     border-radius: 5px;
-    box-shadow: -5px 5px 15px #84aeb4;
+    box-shadow: -5px 5px 15px #97b4b8;
     background: #fff2c8;
 }
 
@@ -133,11 +133,11 @@
 }
 
 .recommend-card {
-    box-shadow: 0 0 10px #c9759b;
     padding: 10px;
     margin: 5px 2px;
     color: #4D1335;
     background: #f5c5e256;
+    box-shadow: 0 0 10px #c9759b;
 }
 
 .recommend-img {
