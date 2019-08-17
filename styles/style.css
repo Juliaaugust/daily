@@ -63,7 +63,7 @@ ul {
     font-size: 1.15em;
     opacity: 1;
     text-decoration: underline;
-    transition: 0.5s;
+    transition: 0.5s;3
 }
 
 .main-navigation__item:not(.last-nav-li) {
@@ -73,6 +73,10 @@ ul {
 /* a:last-child .main-navigation__item {
     border-left: 1px solid #E4AD5D;
 } */
+
+#menu-checkbox {
+	display: none;
+}
 
 .main-navigation a {
     color: #2e0c20;
@@ -144,12 +148,51 @@ ul {
 }
 
 .footer-line {
-    border: none; /* Убираем границу */
-    background-color: #4b2b3e; /* Цвет линии */
+    border: none;
+    background-color: #4b2b3e;
     height: 1px;
 }
 
 .socials-list__item {  /* also in the contacts section: main_page */
     display: inline-block;
     padding-left: 40px;
+}
+
+@media screen and (max-width: 920px) {
+    .main-navigation {
+        display: none;
+    }
+    .main-navigation__item {
+		width: 100%;
+		font-size: 12px;
+        display: block;
+	}
+	.main-navigation a {
+		display: block;
+		padding: 6px;
+		margin: 3px;
+		border: 1px solid #2e0c20;
+        padding: 8px 22px;
+	}
+    .toggle-button {
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #6a1b4a;
+	}
+	.toggle-button:after {
+		content: attr(data-open);
+		font-size: 22px;
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+		content: attr(data-close);
+    }
+    .main-navigation {
+		position: relative;
+		top: 5px;
+	}
 }

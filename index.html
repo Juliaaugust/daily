@@ -14,25 +14,28 @@
 <body>
     <header class="main-header">
         <div class="header__logo">
-            <a href="#"><img src="img/logo.png" alt="DAILY"></a>
+            <a href="index.html"><img src="img/logo.png" alt="DAILY"></a>
         </div>
+        <input type="checkbox" id="menu-checkbox">
         <nav role="navigation">
+            <label for="menu-checkbox" class="toggle-button" 
+            data-open="Меню" data-close="Закрыть меню" onclick></label>
             <ul class="main-navigation">
                 <li class="main-navigation__item">
                     <img src="img/icons/search.svg" alt="" class="nav-icon">
-                    <a href="#main-search">Поиск</a>
+                    <a href="index.html#main-search">Поиск</a>
                 </li>
                 <li class="main-navigation__item">
                     <img src="img/icons/recommend.svg" alt="" class="nav-icon">
-                    <a href="#main-recommend">Рекомедации</a>
+                    <a href="index.html#main-recommend">Рекомедации</a>
                 </li>
                 <li class="main-navigation__item">
                     <img src="img/icons/advantages.svg" alt="" class="nav-icon">
-                    <a href="#main-advantages">Преимущества</a>
+                    <a href="index.html#main-advantages">Преимущества</a>
                 </li>
                 <li class="main-navigation__item last-nav-li">
                     <img src="img/icons/contacts.svg" alt="" class="nav-icon">
-                    <a href="#main-contacts">Контакты</a>
+                    <a href="index.html#main-contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -48,20 +51,22 @@
             <h3>Множество вариантов заселения специально для Вас!</h3>
             <form action="./rentals.html" class="search-form">
                 <div class="search-form-content">
-                    <div class="main__search-city">
-                        <div class="search-form-info">Выбор города</div>
-                        <input type="text" class="main__input city-input">
-                        <span class="icon-location"></span>
-                    </div>
-                    <div class="main__search-arrival">
-                        <div class="search-form-info">Дата заезда</div>
-                        <input type="date" class="main__input arrival-input">
-                        <span class="icon-calendar"></span>
-                    </div>
-                    <div class="main__search-departure">
-                        <div class="search-form-info">Дата отъезда</div>
-                        <input type="date" class="main__input departure-input">
-                        <span class="icon-calendar"></span>
+                    <div class="search-form-content-inputs">
+                        <div class="main__search-city">
+                            <div class="search-form-info">Выбор города</div>
+                            <input type="text" class="main__input city-input">
+                            <span class="icon-location"></span>
+                        </div>
+                        <div class="main__search-arrival">
+                            <div class="search-form-info">Дата заезда</div>
+                            <input type="date" class="main__input arrival-input">
+                            <span class="icon-calendar"></span>
+                        </div>
+                        <div class="main__search-departure">
+                            <div class="search-form-info">Дата отъезда</div>
+                            <input type="date" class="main__input departure-input">
+                            <span class="icon-calendar"></span>
+                        </div>
                     </div>
                     <input type="submit" value="Поиск жилья" class="main__search-btn">
                 </div>
