@@ -34,8 +34,7 @@
 }
 
 .options-container > div > input {
-    height: 25px;
-    width: 260px;
+    width: 250px;
     color: #2e0c20;
     font-size: 16px;
     padding: 2px 5px;
@@ -44,7 +43,7 @@
 }
 
 .options-container > .price-option input {
-    width: 92px;
+    width: 88px;
 }
 
 /* main */
@@ -58,7 +57,6 @@
     font-size: 16px;
     color: #2e0c20;
 }
-
 
 .variants-count {
     text-align: center;
@@ -127,4 +125,25 @@
     width: 25px;
     position: relative;
     top: 6px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .variant-card {
+        flex-direction: column;
+    }
+    .options-container > div > input {
+        width: 200px;
+    }
+    .options-container > .price-option input {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /* перестроить aside наверх */
+}
+
+@media screen and (max-width: 530px) {
+    
 }

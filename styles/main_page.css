@@ -105,11 +105,9 @@
 /* other sections */
 
 .sections-container {
-    margin: 15px 30px;
+    margin: 0 auto;
     padding: 10px;
     background: #e0e9eb;
-    border-radius: 6px;
-    box-shadow: 8px -3px 15px #69878b;
     max-width: 1400px;
 }
 
@@ -259,5 +257,23 @@
     .main-section:not(.search-section) {
         padding: 30px 10px;
         margin: 40px 10px;
+    }
+    .search-section h3 {
+        font-size: 16px;
+    }
+    .recommend-img {
+        width: 100%;
+    }
+    .sections-container {
+        padding: 0;
+    }
+    .main-section:not(.search-section) {
+        padding: 30px 15px;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+    .advantages-list__item {
+        margin: 0;
     }
 }
