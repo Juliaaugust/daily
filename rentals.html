@@ -56,27 +56,32 @@
                 </select>
             </div>
 
+            <input type="checkbox" id="check-options">
+            <label for="check-options">
+                <img  class="check-options-icon" src="img/icons/settings.png" alt="Settings">
+            </label>
+
             <div class="options-container">
-                <div class="city-option">
+                <div class="city-option option-block">
                     <p class="option-name">Город:</p>
-                    <input type="text" name="city-input" value="Москва">
+                    <input class="option-input" type="text" name="city-input" value="Москва">
                 </div>
-                <div class="arrival-option">
+                <div class="arrival-option option-block">
                     <p class="option-name">Дата заезда:</p>
-                    <input type="date" name="arrival-input">
+                    <input class="option-input" type="date" name="arrival-input">
                 </div>
-                <div class="departure-option">
+                <div class="departure-option option-block">
                     <p class="option-name">Дата отъезда:</p>
-                    <input type="date" name="departure-input">
+                    <input class="option-input" type="date" name="departure-input">
                 </div>
-                <div class="price-option">
+                <div class="price-option option-block">
                     <p class="option-name">Цена за сутки:</p>
-                    От <input type="number" min="0" name="min-price-input">
-                    До <input type="number" min="0" name="max-price-input">
+                    От <input class="option-input" type="number" min="0" name="min-price-input">
+                    До <input class="option-input" type="number" min="0" name="max-price-input">
                 </div>
-                <div class="rating-option">
+                <div class="rating-option option-block">
                     <p>Минимальный рейтинг:</p>
-                    <input type="range" min="1" max="5" step="1" value="3"> 
+                    <input class="option-input" type="range" min="1" max="5" step="1" value="3"> 
                 </div>
             </div>
         </aside>

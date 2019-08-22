@@ -156,7 +156,7 @@ ul {
     padding-left: 40px;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1000px) {
     .main-navigation {
         display: none;
         border: none;
@@ -196,5 +196,24 @@ ul {
     }
     .main-navigation__item:not(.last-nav-li) {
         border-right: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .main-footer {
+        font-size: 16px;
+    }
+    .footer-top,
+    .footer-bottom {
+        padding: 10px 15px;
+    }
+    .foolter-col {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-footer {
+        font-size: 14px;
     }
 }

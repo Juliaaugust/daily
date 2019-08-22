@@ -201,7 +201,7 @@
     text-decoration: underline;
 }
 
-
+/* medias */
 
 @media screen and (max-width: 1000px) {
     .search-form-content {
@@ -275,5 +275,11 @@
     }
     .advantages-list__item {
         margin: 0;
+    }
+    .socials-list {
+        margin-left: -40px;
+    }
+    .contacts-list__item > a {
+        display: block;
     }
 }
