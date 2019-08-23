@@ -11,6 +11,137 @@
     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="main-header">
+        <div class="header__logo">
+            <a href="index.html"><img src="img/logo.png" alt="DAILY"></a>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <nav role="navigation">
+            <label for="menu-checkbox" class="toggle-button" 
+            data-open="Меню" data-close="Закрыть меню" onclick></label>
+            <ul class="main-navigation">
+                <li class="main-navigation__item">
+                    <img src="img/icons/search.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-search">Поиск</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/recommend.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-recommend">Рекомедации</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/advantages.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-advantages">Преимущества</a>
+                </li>
+                <li class="main-navigation__item last-nav-li">
+                    <img src="img/icons/contacts.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button role="button" class="header__enter-btn">Вход</button>
+        <div class="header__user-info">
+            <img src="img/default_avatar.png" alt="" class="header__user-photo">
+            <p class="header__user-name">Julia</p>
+        </div>
+    </header>
+
+    <main class="reservation-main">
+        <section class="reservation-section details">
+            <section class="reservation-subsection date-time">
+                <h2 role="heading" class="section-name">Дата и время</h2>
+                <section class="date-subsection arrival-subsection">
+                    <span class="date-span">Заезд</span>
+                    <input type="date" class="date-input arrival-input">
+                    <select class="date-select">
+                        <option class="date-select__option">Ранний заезд</option>
+                        <option class="date-select__option" selected="selected">14:00</option>
+                        <option class="date-select__option">15:00</option>
+                        <option class="date-select__option">16:00</option>
+                        <option class="date-select__option">17:00</option>
+                        <option class="date-select__option">18:00</option>
+                        <option class="date-select__option">19:00</option>
+                        <option class="date-select__option">20:00</option>
+                        <option class="date-select__option">21:00</option>
+                        <option class="date-select__option">22:00</option>
+                        <option class="date-select__option">23:00</option>
+                    </select>
+                </section>
+                <section class="date-subsection departure-section">
+                    <span class="date-span">Отъезд</span>
+                    <input type="date" class="date-input departure-input">
+                    <select class="date-select">
+                        <option class="date-select__option">00:00</option>
+                        <option class="date-select__option">01:00</option>
+                        <option class="date-select__option">02:00</option>
+                        <option class="date-select__option">03:00</option>
+                        <option class="date-select__option">04:00</option>
+                        <option class="date-select__option">05:00</option>
+                        <option class="date-select__option">06:00</option>
+                        <option class="date-select__option">07:00</option>
+                        <option class="date-select__option">08:00</option>
+                        <option class="date-select__option">09:00</option>
+                        <option class="date-select__option">10:00</option>
+                        <option class="date-select__option">11:00</option>
+                        <option class="date-select__option" selected="selected">12:00</option>
+                        <option class="date-select__option">Поздний отъезд</option>
+                    </select>
+                </section>
+            </section>
+            <section class="reservation-subsection guests">
+                    <h2 role="heading" class="section-name">Состав гостей</h2>
+                    <p>Гость 1</p>
+
+                    <p><input type="checkbox"> С питомцами</p>
+            </section>
+            <section class="reservation-subsection target">
+                <h2 role="heading" class="section-name">Цель заезда</h2>
+                <select class="target-select">
+                    <option class="target-select__option" selected="selected">Выбор цели</option>
+                    <option class="target-select__option">Работа</option>
+                    <option class="target-select__option">Отдых</option>
+                    <option class="target-select__option">Вечеринка</option>
+                </select>
+            </section>
+        </section>
+        <section class="reservation-section payment">
+            <section class="reservation-subsection sum">
+                <h2 role="heading" class="section-name">Сумма заказа</h2>
+                <p>К оплате:</p>
+                <p>8 000 ₽</p>
+            </section>
+            <section class="reservation-subsection payment-method">
+                <h2 role="heading" class="section-name">Способ оплаты</h2>
+                <p>Выберете удобнй Вам способ оплаты:</p>
+
+                <form action="./payment.html" class="payment-form">
+                <p>Выберете удобный Вам способ оплаты:</p>
+                <ul class="payment-list">
+                    <li class="payment-list__item">
+                        <input name="payment-method" type="radio" value="card">
+                        Банковская карта
+                        <img src="img/icons/payment/card.png" alt="">
+                    </li>
+                    <li class="payment-list__item">
+                        <input name="payment-method" type="radio" value="sber">
+                        Сбербанк oнлайн
+                        <img src="img/icons/payment/sber.png" alt="">
+                    </li>
+                    <li class="payment-list__item">
+                        <input name="payment-method" type="radio" value="webmoney">
+                        WebMoney
+                        <img src="img/icons/payment/webmoney.png" alt="">
+                    </li>
+                    <li class="payment-list__item">
+                        <input name="payment-method" type="radio" value="ya-money">
+                        Яндекс.Деньги
+                        <img src="img/icons/payment/ya-money.gif" alt="">
+                    </li>
+                </ul>
+                    
+                    <p><input type="submit" value="Оплатить" class="pay-btn"></p>
+                </form>
+            </section>
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,23 @@
+
+.reservation-main {
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #e0e9eb;
+    max-width: 1400px;
+}
+
+.reservation-section {
+    padding: 20px 30px;
+    margin: 20px 30px;
+    border: 1px solid #015f705d;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px #97b4b8;
+    background: #fff2c8;
+}
+
+
+
+
+.payment-list__item > img {
+    height: 50px;
+}

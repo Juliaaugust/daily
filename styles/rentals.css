@@ -163,6 +163,9 @@
         border-radius: 0;
         box-shadow: none;
     }
+    .rentals-aside {
+        padding-bottom: 20px;
+    }
     .options-container {
         display: flex;
         flex-direction: column;
@@ -172,22 +175,25 @@
     }
     .variant-card {
         flex-direction: row;
+        border-radius: 0;
     }
     .select-sorting-container {
         display: inline-block;
-        margin: 0 15px;
+        margin-left: 30px;
     }
     .check-options-icon {
         display: inline-block;
         position: relative;
         top: 8px;
         cursor: pointer;
+        margin-left: 30px;
     }
     .options-container {
         display: none;
     }
     #check-options:checked ~ .options-container {
-		display: flex;
+        display: flex;
+        margin-left: 20px;
 	}
 }
 
@@ -206,10 +212,12 @@
         font-size: 14px;
         width: 100%;
     }
+    .check-options-icon {
+        width: 22px;
+    }
     .option-block {
         font-size: 16px;
     }
-    
     .option-input {
         width: 180px;
         font-size: 14px;
