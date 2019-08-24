@@ -55,8 +55,6 @@
     display: none;
 }
 
-/* main */
-
 .select-sorting-container {
     text-align: center;
 }
@@ -66,6 +64,8 @@
     font-size: 16px;
     color: #2e0c20;
 }
+
+/* main */
 
 .variants-count {
     text-align: center;

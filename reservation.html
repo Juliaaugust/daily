@@ -89,9 +89,26 @@
             </section>
             <section class="reservation-subsection guests">
                     <h2 role="heading" class="section-name">Состав гостей</h2>
-                    <p>Гость 1</p>
-
-                    <p><input type="checkbox"> С питомцами</p>
+                    <h5>Гость 1:</h5>
+                    <ul class="guest-info">
+                        <li class="guest-info__item">
+                            <label for="guest-fio-input">ФИО:
+                                <input type="text" id="guest-fio-input" class="guest-input">
+                            </label> 
+                        </li>
+                        <li class="guest-info__item">
+                            <label for="guest-tel-input">Номер телефона:
+                                <input type="tel" id="guest-tel-input" class="guest-input">
+                            </label>
+                        </li>
+                        <li class="guest-info__item">
+                            <label for="guest-email-input">E-mail:
+                                <input type="email" id="guest-email-input" class="guest-input">
+                            </label>
+                        </li>
+                    </ul>
+                    <p class="add-guest"><span class="plus-guest">+</span> Добавить гостя</p>
+                    <label for="pets"><input type="checkbox" id="pets"> С питомцами</label>
             </section>
             <section class="reservation-subsection target">
                 <h2 role="heading" class="section-name">Цель заезда</h2>
@@ -107,7 +124,7 @@
             <section class="reservation-subsection sum">
                 <h2 role="heading" class="section-name">Сумма заказа</h2>
                 <p>К оплате:</p>
-                <p>8 000 ₽</p>
+                <p class="sum-value">8 000 ₽</p>
             </section>
             <section class="reservation-subsection payment-method">
                 <h2 role="heading" class="section-name">Способ оплаты</h2>
@@ -116,23 +133,27 @@
                 <p>Выберете удобный Вам способ оплаты:</p>
                 <ul class="payment-list">
                     <li class="payment-list__item">
-                        <input name="payment-method" type="radio" value="card">
-                        Банковская карта
+                        <label for="card">
+                            <input name="payment-method" type="radio" id="card">
+                        Банковская карта</label>
                         <img src="img/icons/payment/card.png" alt="">
                     </li>
                     <li class="payment-list__item">
-                        <input name="payment-method" type="radio" value="sber">
-                        Сбербанк oнлайн
+                        <label for="sber">
+                            <input name="payment-method" type="radio" id="sber">
+                        Сбербанк oнлайн</label>
                         <img src="img/icons/payment/sber.png" alt="">
                     </li>
                     <li class="payment-list__item">
-                        <input name="payment-method" type="radio" value="webmoney">
-                        WebMoney
+                        <label for="webmoney">
+                            <input name="payment-method" type="radio" id="webmoney">
+                        WebMoney</label>
                         <img src="img/icons/payment/webmoney.png" alt="">
                     </li>
                     <li class="payment-list__item">
-                        <input name="payment-method" type="radio" value="ya-money">
-                        Яндекс.Деньги
+                        <label for="ya-money">
+                            <input name="payment-method" type="radio" id="ya-money">
+                        Яндекс.Деньги</label>
                         <img src="img/icons/payment/ya-money.gif" alt="">
                     </li>
                 </ul>
