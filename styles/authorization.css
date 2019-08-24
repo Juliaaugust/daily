@@ -20,10 +20,10 @@ body {
 } */
 
 .dws-wrapper {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -63,7 +63,7 @@ body {
 }
 label.tab {
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     padding: 15px;
     display: inline-block;
     border-radius: 3px 3px 0 0;
@@ -125,4 +125,15 @@ a.button:hover {
 .recover-input {
     position: relative;
     bottom: 2px;
+}
+
+@media screen and (max-width: 530px) {
+    .dws-form {
+        width: 100%;
+        margin: 10px;
+        font-size: 16px;
+    }
+    a.button {
+        font-size: 18px;
+    }
 }
