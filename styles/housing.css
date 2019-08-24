@@ -71,21 +71,6 @@
 
 /* main */
 
-.carousel-section-wrapper {
-    margin-bottom: 20px;
-}
-
-.carousel-item {
-    height: 500px;
-    width: 100%;
-}
-
-.d-block {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 .housing-address {
     margin-bottom: 10px;
 }
@@ -118,6 +103,7 @@
     border-radius: 5px;
     box-shadow: -5px 5px 15px #97b4b8;
     background: #fff2c8;
+    color: #2e0c20;
 }
 
 

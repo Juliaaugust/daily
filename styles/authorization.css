@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/authoriz_bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: #6669772d;
+} */
+
+.dws-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.dws-form {
+    background-color: #e0e9ebbd;
+    padding: 10px;
+    width: 380px;
+    border-radius: 8px;
+}
+.dws-form a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #6a1b4a;
+}
+.dws-form a:hover {
+    color: #e08ab1;
+}
+.dws-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dws-form input:not(.recover-input) {
+    display: block;
+    width: 100%;
+}
+.tab-form {
+    background-color: #fff2c8;
+    display: none;
+    padding: 30px 20px 20px;
+    border-radius: 0 8px 8px 8px;
+}
+.tab-form.active {
+    display: block;
+}
+label.tab {
+    color: #fff;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -3px;
+    cursor: pointer;
+}
+label.tab.active {
+    background-color: #fff2c8;
+    color: #6a1b4a;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Формы */
+.input {
+    font-size: 16px;
+    border: none;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    color: #2e0c20;
+    border-radius: 5px;
+}
+a.button {
+    color: #4D1335;
+    background: linear-gradient(0deg, #7e4b6a 0%, #e08ab1 100%);
+    border: #ad807b;
+    border-radius: 8px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 46px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+a.button:hover {
+    color: rgb(61, 13, 41);
+    background: linear-gradient(0deg, #6b3d59 0%, #c9759b 100%);
+}
+.socials-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.socials-list a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+.socials-list + a {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.recover-input {
+    position: relative;
+    bottom: 2px;
+}
