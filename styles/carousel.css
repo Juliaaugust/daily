@@ -120,4 +120,3 @@ input#img-4:checked ~ .carousel-dots label#img-dot-4 {
 
 
 input:checked + .slide-container .nav label { display: block; }
-

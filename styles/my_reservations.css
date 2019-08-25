@@ -1,0 +1,134 @@
+.page-wrapper {
+    margin: 0 auto;
+    padding: 10px 30px;
+    background: #e0e9eb;
+    max-width: 1400px;
+}
+
+h1 {
+    color: #6a1b4a;
+}
+
+.toggles {
+    margin: 20px 0;
+}
+
+.toggles button {
+    border: none;
+    background: #e0e9eb;
+    color: #6a1b4a;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.toggles button:hover {
+    color: #b16f8c;
+}
+
+.toggles button:after {
+    content: " / ";
+}
+
+.toggles button:last-child:after {
+    content: "";
+}
+
+.reservation-card {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px #97b4b8;
+    background: #fff2c8;
+    color: #2e0c20;
+}
+
+.housing-description {
+    position: relative;
+    width: 100%;
+}
+
+.rewiew {
+    position: absolute;
+    bottom: 20px;
+}
+
+.housing-description a {
+    color: #2e0c20;
+}
+
+.housing-description .housing-name {
+    color: #6a1b4a;
+}
+
+.description-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.variant-image {
+    width: 320px;
+}
+
+.carousel-wrapper {
+    width: 320px;
+    margin-right: 20px;
+}
+
+.housing-address > img {
+    width: 25px;
+    position: relative;
+    top: 6px;
+}
+
+.rewiew-btn {
+    width: 200px;
+    padding: 10px;
+    color: #4D1335;
+    font-size: 24px;
+    background: linear-gradient(0deg, #7e4b6a 0%, #e08ab1 100%);
+    border: #ad807b;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rewiew-btn:hover {
+    cursor: pointer;
+    color: rgb(61, 13, 41);
+    background: linear-gradient(0deg, #6b3d59 0%, #c9759b 100%);
+}
+
+.rewiew-btn.no-rewiew {
+    background: linear-gradient(0deg, #816b79 0%, #e0c0cf 100%);
+}
+
+.rewiew-btn.no-rewiew:hover {
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 780px) {
+    .reservation-card,
+    .description-top {
+        flex-direction: column;
+    }
+    .rewiew {
+        position: static;
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    .carousel-wrapper {
+        width: 100%;
+    }
+    .variant-image {
+        width: 100%;
+    }
+    .rewiew-btn {
+        padding: 5px;
+        font-size: 20px;
+    }
+}
