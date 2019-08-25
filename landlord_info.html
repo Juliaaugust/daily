@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/landlord_info.css">
+    <title>DAILY rental housing</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+
+            <section class="ll_info-section top-info">
+                <img src="img/default_avatar.png" class="user-ava" alt="">
+    
+                <div class="short-info">
+                    <div class="username">
+                        <span class="name">Комаров</span>
+                        <span class="surname">Виктор</span>
+                        <span class="patronymic"></span>
+                    </div>
+                    <div class="role">
+                        <p>Роль в системе: <span class="role-value">продавец</span></p>
+                    </div>
+                    <div class="regist-date">
+                        <p>Дата регистрации: <span class="regist-date-value">28.05.2017</span></p>
+                    </div>
+                    <div class="timezone">
+                        <p>Часовой пояс: <span class="timezone-value">UTC +03:00</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ll_info-section contacts">
+                <h2 role="header">Контактные данные</h2>
+    
+                <p>
+                    <label for="tel-input">Телефон:</label>
+                    <input type="text" id="tel-input" class="user-input" value="89555578789" disabled>
+                </p>
+                
+                <p>
+                    <label for="email-input">Email:</label>
+                    <input type="email" id="email-input" class="user-input" value="komarrrov@gmail.com" disabled>
+                </p>
+            </section>
+
+            <section class="ll_info-section contacts">
+                <h2 role="header">Объявляения пользователя</h2>
+
+                <div class="vacancy-card">
+                        <div class="carousel-wrapper">
+                            <img src="img/housing_variants/var_0_1.jpg" alt="" class="vacancy-image">
+                        </div>
+                        <div class="housing-description">
+                            <a href="./housing.html" target="_blank">
+                                <h2 class="housing-name">Двухкомнатная квартира</h2>
+                                <div class="housing-address">
+                                    <img src="img/icons/location.svg" alt="">
+                                    Москва, Старая Басманная, 5
+                                </div>
+                                <div class="housing-price">
+                                    <img src="img/icons/price.svg" alt="">
+                                    <span class="price-card-value">8 000</span> ₽ за сутки
+                                </div>
+                            </a>
+            
+                            <div class="housing-params">
+                                <div class="status">
+                                    Статус: <span class="status-name">одобрено</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vacancy-card">
+                        <div class="carousel-wrapper">
+                            <img src="img/housing_variants/var_1_1.jpg" alt="" class="vacancy-image">
+                        </div>
+                        <div class="housing-description">
+                            <a href="./housing.html" target="_blank">
+                                <h2 class="housing-name">Апартамент</h2>
+                                <div class="housing-address">
+                                    <img src="img/icons/location.svg" alt="">
+                                    Москва, Тверская ул., 37
+                                </div>
+                                <div class="housing-price">
+                                    <img src="img/icons/price.svg" alt="">
+                                    <span class="price-card-value">12 000</span> ₽ за сутки
+                                </div>
+                            </a>
+            
+                            <div class="housing-params">
+                                <div class="status">
+                                    Статус: <span class="status-name">на рассмотрении</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="vacancy-card">
+                        <div class="carousel-wrapper">
+                            <img src="img/housing_variants/var_2_1.jpg" alt="" class="vacancy-image">
+                        </div>
+                        <div class="housing-description">
+                            <a href="./housing.html" target="_blank">
+                                <h2 class="housing-name">Апартамент</h2>
+                                <div class="housing-address">
+                                    <img src="img/icons/location.svg" alt="">
+                                    Москва, ул. Гагарина, 18
+                                </div>
+                                <div class="housing-price">
+                                    <img src="img/icons/price.svg" alt="">
+                                    <span class="price-card-value">5 500</span> ₽ за сутки
+                                </div>
+                            </a>
+            
+                            <div class="housing-params">
+                                <div class="status">
+                                    Статус: <span class="status-name">отклонено</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    </div>
+</body>
+</html>
