@@ -30,7 +30,8 @@
 .date-input,
 .date-select,
 .guest-input,
-.target-select {
+.target-select,
+.comment-textarea {
     width: 150px;
     color: #2e0c20;
     font-size: 16px;
@@ -66,6 +67,11 @@
 #pets {
     position: relative;
     bottom: 2px;
+}
+
+.comment-textarea {
+    width: 50%;
+    max-width: 400px;
 }
 
 .payment-list__item {
@@ -107,5 +113,8 @@
     }
     .guest-input {
         display: block;
+    }
+    .comment-textarea {
+        width: 80%;
     }
 }

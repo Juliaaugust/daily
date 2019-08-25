@@ -196,95 +196,130 @@
 
                 <section class="housing-section housing-prices">
                     <h2 role="heading" class="section-name">Цены</h2>
-                    <p>Стоимость указана за квартиру целиком в рублях РФ</p>
+                    <p>Стоимость указана в рублях РФ</p>
                     <div class="main-price">
-                        <div class="price-value">8 000₽ за сутки</div>
-                        <div class="price-description">включает проживание не более 6 гостей</div>
+                        <div class="price"><span class="price-value">8 000₽</span> за сутки</div>
+                        <div class="description">включает проживание не более <span class="guest-count">6</span> гостей</div>
                     </div>
                 </section>
 
                 <section class="housing-section housing-reviews">
                     <h2 role="heading" class="section-name">Оценка и отзывы</h2>
-                    <p>На основании <span class="reviews-count">2</span> отзывов</p>
-
-                    <ul class="stars-rating">
-                        <li class="stars-rating__item">
-                            <img class="icon-star" src="img/icons/star.png" alt="">
-                        </li>
-                        <li class="stars-rating__item">
-                            <img class="icon-star" src="img/icons/star.png" alt="">
-                        </li>
-                        <li class="stars-rating__item">
-                            <img class="icon-star" src="img/icons/star.png" alt="">
-                        </li>
-                        <li class="stars-rating__item">
-                            <img class="icon-star" src="img/icons/star.png" alt="">
-                        </li>
-                        <li class="stars-rating__item">
-                            <img class="icon-star-black" src="img/icons/star-black.png" alt="">
-                        </li>
-                    </ul>
 
                     <div class="rating-container">
                         <div class="rating-value-box">
                             4.2
                         </div>
-                        <ul class="rating-list">
-                            <li class="rating-list__item">
-                                <div class="rating-name">
-                                    Чистота
-                                </div>
-                                <div class="rating-value">
-                                    <label class="rating__progress-value">4.9</label>
-                                    <div class="rating__progress-bar" role="progressbar"></div>
-                                </div>
-                            </li>
-                            <li class="rating-list__item">
-                                <div class="rating-name">
-                                    Обслуживание
-                                </div>
-                                <div class="rating-value">
-                                    <label class="rating__progress-value">3.9</label>
-                                    <div class="rating__progress-bar" role="progressbar"></div>
-                                </div>
-                            </li>
-                            <li class="rating-list__item">
-                                <div class="rating-name">
-                                    Цена-качество
-                                </div>
-                                <div class="rating-value">
-                                    <label class="rating__progress-value">4.1</label>
-                                    <div class="rating__progress-bar" role="progressbar"></div>
-                                </div>
-                            </li>
-                        </ul>
+                        <div>
+                            <p>На основании <span class="reviews-count">2</span> отзывов</p>
+                            <ul class="stars-rating">
+                                <li class="stars-rating__item">
+                                    <img class="icon-star" src="img/icons/star.png" alt="">
+                                </li>
+                                <li class="stars-rating__item">
+                                    <img class="icon-star" src="img/icons/star.png" alt="">
+                                </li>
+                                <li class="stars-rating__item">
+                                    <img class="icon-star" src="img/icons/star.png" alt="">
+                                </li>
+                                <li class="stars-rating__item">
+                                    <img class="icon-star" src="img/icons/star.png" alt="">
+                                </li>
+                                <li class="stars-rating__item">
+                                    <img class="icon-star-black" src="img/icons/star-black.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        
                     </div> <!--rating-->
+
+                    <ul class="rating-list">
+                        <li class="rating-list__item">
+                            <div class="rating-name">
+                                Чистота
+                            </div>
+                            <div class="rating-value">
+                                <progress class="rating__progress-bar" role="progressbar" max="5" value="4.6"></progress>
+                                <label class="rating__progress-value">4.6</label>
+                            </div>
+                        </li>
+                        <li class="rating-list__item">
+                            <div class="rating-name">
+                                Обслуживание
+                            </div>
+                            <div class="rating-value">
+                                <progress class="rating__progress-bar" role="progressbar" max="5" value="3.9"></progress>
+                                <label class="rating__progress-value">3.9</label>
+                            </div>
+                        </li>
+                        <li class="rating-list__item">
+                            <div class="rating-name">
+                                Расположение
+                            </div>
+                            <div class="rating-value">
+                                <progress class="rating__progress-bar" role="progressbar" max="5" value="3.8"></progress>
+                                <label class="rating__progress-value">3.8</label>
+                            </div>
+                        </li>
+                        <li class="rating-list__item">
+                            <div class="rating-name">
+                                Удобства
+                            </div>
+                            <div class="rating-value">
+                                <progress class="rating__progress-bar" role="progressbar" max="5" value="4.1"></progress>
+                                <label class="rating__progress-value">4.1</label>
+                            </div>
+                        </li>
+                        <li class="rating-list__item">
+                            <div class="rating-name">
+                                Цена-качество
+                            </div>
+                            <div class="rating-value">
+                                <progress class="rating__progress-bar" role="progressbar" max="5" value="4.4"></progress>
+                                <label class="rating__progress-value">4.4</label>
+                            </div>
+                        </li>
+                        <li class="rating-list__item">
+                            <div class="rating-name">
+                                Комфорт
+                            </div>
+                            <div class="rating-value">
+                                <progress class="rating__progress-bar" role="progressbar" max="5" value="4.7"></progress>
+                                <label class="rating__progress-value">4.7</label>
+                            </div>
+                        </li>
+                    </ul>
+                    
 
                     <div class="reviews-container">
                         <h3 class="section-name">Отзывы гостей</h3>
                         <ul class="reviews-list">
                             <li class="reviews-list__item">
-                                <img src="img/default_avatar.png" alt="" class="guest-avatar">
                                 <div class="comment-top">
-                                    <p class="guest-name">Анна</p>
-                                    <ul class="stars-rating">
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star" src="img/icons/star.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star" src="img/icons/star.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star" src="img/icons/star.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star" src="img/icons/star.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star-black" src="img/icons/star-black.png" alt="">
-                                        </li>
-                                    </ul>
-                                    <p class="comment-date">20 мая 2018</p>
+                                    <div>
+                                        <img src="img/default_avatar.png" alt="" class="guest-avatar">
+                                        <p class="guest-name">Анна</p>
+                                    </div>
+                                    <div>
+                                        <ul class="stars-rating">
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star" src="img/icons/star.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star" src="img/icons/star.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star" src="img/icons/star.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star" src="img/icons/star.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star-black" src="img/icons/star-black.png" alt="">
+                                            </li>
+                                        </ul>
+                                        <p class="comment-date">20 мая 2018</p>
+                                    </div>
                                 </div>
 
                                 <div class="comment-text">
@@ -297,27 +332,31 @@
                                 <div class="comment-imges"></div>
                             </li>
                             <li class="reviews-list__item">
-                                <img src="img/default_avatar.png" alt="" class="guest-avatar">
                                 <div class="comment-top">
-                                    <p class="guest-name">Олег</p>
-                                    <ul class="stars-rating">
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star" src="img/icons/star.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star" src="img/icons/star.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star" src="img/icons/star.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star-black" src="img/icons/star-black.png" alt="">
-                                        </li>
-                                        <li class="stars-rating__item">
-                                            <img class="icon-star-black" src="img/icons/star-black.png" alt="">
-                                        </li>
-                                    </ul>
-                                    <p class="comment-date">7 сентября 2018</p>
+                                    <div>
+                                        <img src="img/default_avatar.png" alt="" class="guest-avatar">
+                                        <p class="guest-name">Олег</p>
+                                    </div>
+                                    <div>
+                                        <ul class="stars-rating">
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star" src="img/icons/star.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star" src="img/icons/star.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star" src="img/icons/star.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star-black" src="img/icons/star-black.png" alt="">
+                                            </li>
+                                            <li class="stars-rating__item">
+                                                <img class="icon-star-black" src="img/icons/star-black.png" alt="">
+                                            </li>
+                                        </ul>
+                                        <p class="comment-date">7 сентября 2018</p>
+                                    </div>
                                 </div>
 
                                 <div class="comment-text">

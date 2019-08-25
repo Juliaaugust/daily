@@ -106,15 +106,59 @@
     color: #2e0c20;
 }
 
-
-
 .section-name {
     color: #6a1b4a;
     margin-top: 20px;
 }
 
+.price-value,
+.guest-count {
+    font-size: 18px;
+    font-weight: bold;
+}
 
+.price {
+    padding: 10px;
+    margin: 10px 0;
+    background: #f5c5e256;
+    border: 1px solid #c9759b83;
+    border-radius: 5px;
+    display: inline-block;
+}
 
+.rating-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rating-value-box {
+    padding: 10px;
+    margin-right: 20px;
+    color: #4D1335;
+    font-size: 22px;
+    font-weight: bold;
+    background: #f5c5e256;
+    box-shadow: 0 0 10px #c9759b;
+    display: inline-block;
+}
+
+.rating-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rating-list__item {
+    margin-right: 20px;
+}
+
+.rating-name {
+    margin: 10px 0 0;
+}
+.rating__progress-value {
+    position: relative;
+    bottom: 3px;
+}
 
 .guest-avatar {
     height: 40px;
@@ -129,6 +173,16 @@
     box-shadow: 0 0 10px #c9759b;
 }
 
+.comment-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comment-header {
+    font-weight: bold;
+    margin: 10px 0 0;
+}
 
 @media screen and (max-width: 1000px) {
     .option-input {
@@ -189,8 +243,4 @@
     #check-options:checked ~ .options-container {
 		display: flex;
 	}
-}
-
-@media screen and (max-width: 530px) {
-
 }

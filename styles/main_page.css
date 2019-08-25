@@ -98,7 +98,7 @@
 
 .main__search-btn:hover {
     cursor: pointer;
-    color: rgb(61, 13, 41);
+    color: #3d0d29;
     background: linear-gradient(0deg, #6b3d59 0%, #c9759b 100%);
 }
 

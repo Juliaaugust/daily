@@ -51,7 +51,7 @@
                 <h2 role="heading" class="section-name">Дата и время</h2>
                 <section class="date-subsection arrival-subsection">
                     <span class="date-span">Заезд</span>
-                    <input type="date" class="date-input arrival-input">
+                    <input type="date"  value="2019-08-27" class="date-input arrival-input">
                     <select class="date-select">
                         <option class="date-select__option">Ранний заезд</option>
                         <option class="date-select__option" selected="selected">14:00</option>
@@ -68,7 +68,7 @@
                 </section>
                 <section class="date-subsection departure-section">
                     <span class="date-span">Отъезд</span>
-                    <input type="date" class="date-input departure-input">
+                    <input type="date" value="2019-08-29" class="date-input departure-input">
                     <select class="date-select">
                         <option class="date-select__option">00:00</option>
                         <option class="date-select__option">01:00</option>
@@ -88,43 +88,47 @@
                 </section>
             </section>
             <section class="reservation-subsection guests">
-                    <h2 role="heading" class="section-name">Состав гостей</h2>
-                    <h5>Гость 1:</h5>
-                    <ul class="guest-info">
-                        <li class="guest-info__item">
-                            <label for="guest-fio-input">ФИО:
-                                <input type="text" id="guest-fio-input" class="guest-input">
-                            </label> 
-                        </li>
-                        <li class="guest-info__item">
-                            <label for="guest-tel-input">Номер телефона:
-                                <input type="tel" id="guest-tel-input" class="guest-input">
-                            </label>
-                        </li>
-                        <li class="guest-info__item">
-                            <label for="guest-email-input">E-mail:
-                                <input type="email" id="guest-email-input" class="guest-input">
-                            </label>
-                        </li>
-                    </ul>
-                    <p class="add-guest"><span class="plus-guest">+</span> Добавить гостя</p>
-                    <label for="pets"><input type="checkbox" id="pets"> С питомцами</label>
+                <h2 role="heading" class="section-name">Состав гостей</h2>
+                <h5>Гость 1:</h5>
+                <ul class="guest-info">
+                    <li class="guest-info__item">
+                        <label for="guest-fio-input">ФИО:
+                            <input type="text" id="guest-fio-input" class="guest-input" required>
+                        </label> 
+                    </li>
+                    <li class="guest-info__item">
+                        <label for="guest-tel-input">Номер телефона:
+                            <input type="tel" id="guest-tel-input" class="guest-input" required>
+                        </label>
+                    </li>
+                    <li class="guest-info__item">
+                        <label for="guest-email-input">E-mail:
+                            <input type="email" id="guest-email-input" class="guest-input" required>
+                        </label>
+                    </li>
+                </ul>
+                <p class="add-guest"><span class="plus-guest">+</span> Добавить гостя</p>
+                <label for="pets"><input type="checkbox" id="pets"> С питомцами</label>
             </section>
             <section class="reservation-subsection target">
                 <h2 role="heading" class="section-name">Цель заезда</h2>
                 <select class="target-select">
-                    <option class="target-select__option" selected="selected">Выбор цели</option>
+                    <option class="target-select__option" selected>Выбор цели</option>
                     <option class="target-select__option">Работа</option>
                     <option class="target-select__option">Отдых</option>
                     <option class="target-select__option">Вечеринка</option>
                 </select>
+            </section>
+            <section class="reservation-subsection comment">
+                <h2 role="heading" class="section-name">Комментарий к бронированию</h2>
+                <textarea class="comment-textarea" placeholder="Ваш комментарий" cols="40" rows="5"></textarea>
             </section>
         </section>
         <section class="reservation-section payment">
             <section class="reservation-subsection sum">
                 <h2 role="heading" class="section-name">Сумма заказа</h2>
                 <p>К оплате:</p>
-                <p class="sum-value">8 000 ₽</p>
+                <p class="sum-value">16 000 ₽</p>
             </section>
             <section class="reservation-subsection payment-method">
                 <h2 role="heading" class="section-name">Способ оплаты</h2>
@@ -163,5 +167,55 @@
             </section>
         </section>
     </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li class="foolter-col-list__item"><a href="#">Личный кабинет</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Служба поддержки</a></li>
+                    </ul>
+                </div>
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li>Арендодателям</li>
+                        <li class="foolter-col-list__item"><a href="#">Как сдавать свое жилье</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Разместить объявление</a></li>
+                    </ul>
+                </div>
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li>Гостям</li>
+                        <li class="foolter-col-list__item"><a href="#">Как бронировать жилье</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Гарантии заселения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-line"/>
+            <div class="footer-bottom">
+                <div class="copy">
+                    &copy; 2019. DAILY rental housing
+                </div>
+                <ul class="socials-list">
+                    <li class="socials-list__item">
+                        <a href="https://vk.com" target="_blank">
+                            <img src="img/icons/socials/vk.png" alt="vk">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="img/icons/socials/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="img/icons/socials/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
