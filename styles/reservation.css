@@ -27,11 +27,7 @@
     margin: 10px 0;
 }
 
-.date-input,
-.date-select,
-.guest-input,
-.target-select,
-.comment-textarea {
+.reservation-input {
     width: 150px;
     color: #2e0c20;
     font-size: 16px;

@@ -94,6 +94,7 @@ ul {
     padding: 5px 15px;
     height: 36px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .header__enter-btn:hover {

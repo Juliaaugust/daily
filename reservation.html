@@ -51,10 +51,10 @@
                 <h2 role="heading" class="section-name">Дата и время</h2>
                 <section class="date-subsection arrival-subsection">
                     <span class="date-span">Заезд</span>
-                    <input type="date"  value="2019-08-27" class="date-input arrival-input">
-                    <select class="date-select">
+                    <input type="date"  value="2019-08-27" class="reservation-input date-input arrival-input">
+                    <select class="reservation-input date-select">
                         <option class="date-select__option">Ранний заезд</option>
-                        <option class="date-select__option" selected="selected">14:00</option>
+                        <option class="date-select__option" selected>14:00</option>
                         <option class="date-select__option">15:00</option>
                         <option class="date-select__option">16:00</option>
                         <option class="date-select__option">17:00</option>
@@ -68,8 +68,8 @@
                 </section>
                 <section class="date-subsection departure-section">
                     <span class="date-span">Отъезд</span>
-                    <input type="date" value="2019-08-29" class="date-input departure-input">
-                    <select class="date-select">
+                    <input type="date" value="2019-08-29" class="reservation-input date-input departure-input">
+                    <select class="reservation-input date-select">
                         <option class="date-select__option">00:00</option>
                         <option class="date-select__option">01:00</option>
                         <option class="date-select__option">02:00</option>
@@ -93,17 +93,17 @@
                 <ul class="guest-info">
                     <li class="guest-info__item">
                         <label for="guest-fio-input">ФИО:
-                            <input type="text" id="guest-fio-input" class="guest-input" required>
+                            <input type="text" id="guest-fio-input" class="reservation-input guest-input" required>
                         </label> 
                     </li>
                     <li class="guest-info__item">
                         <label for="guest-tel-input">Номер телефона:
-                            <input type="tel" id="guest-tel-input" class="guest-input" required>
+                            <input type="tel" id="guest-tel-input" class="reservation-input guest-input" required>
                         </label>
                     </li>
                     <li class="guest-info__item">
                         <label for="guest-email-input">E-mail:
-                            <input type="email" id="guest-email-input" class="guest-input" required>
+                            <input type="email" id="guest-email-input" class="reservation-input guest-input" required>
                         </label>
                     </li>
                 </ul>
@@ -112,7 +112,7 @@
             </section>
             <section class="reservation-subsection target">
                 <h2 role="heading" class="section-name">Цель заезда</h2>
-                <select class="target-select">
+                <select class="reservation-input target-select">
                     <option class="target-select__option" selected>Выбор цели</option>
                     <option class="target-select__option">Работа</option>
                     <option class="target-select__option">Отдых</option>
@@ -121,7 +121,7 @@
             </section>
             <section class="reservation-subsection comment">
                 <h2 role="heading" class="section-name">Комментарий к бронированию</h2>
-                <textarea class="comment-textarea" placeholder="Ваш комментарий" cols="40" rows="5"></textarea>
+                <textarea class="reservation-input comment-textarea" placeholder="Ваш комментарий" cols="40" rows="5"></textarea>
             </section>
         </section>
         <section class="reservation-section payment">
@@ -161,7 +161,6 @@
                         <img src="img/icons/payment/ya-money.gif" alt="">
                     </li>
                 </ul>
-                    
                     <p><input type="submit" value="Оплатить" class="pay-btn"></p>
                 </form>
             </section>
