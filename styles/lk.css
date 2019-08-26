@@ -70,16 +70,6 @@
     background: linear-gradient(0deg, #6b3d59 0%, #c9759b 100%);
 }
 
-/* header */
-
-.header__user-info {
-    display: block;
-}
-
-.header__enter-btn {
-    display: none;
-}
-
 @media screen and (max-width: 530px) {
     .username {
         position: static;

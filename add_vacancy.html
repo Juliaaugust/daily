@@ -6,11 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/add_vacancy.css">
+    <link rel="stylesheet" href="styles/user_header.css">
     <title>DAILY rental housing</title>
 
     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="main-header">
+        <div class="header__logo">
+            <a href="index.html"><img src="img/logo.png" alt="DAILY"></a>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <nav role="navigation">
+            <label for="menu-checkbox" class="toggle-button" 
+            data-open="Меню" data-close="Закрыть меню" onclick></label>
+            <ul class="main-navigation">
+                <li class="main-navigation__item">
+                    <img src="img/icons/search.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-search">Поиск</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/recommend.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-recommend">Рекомедации</a>
+                </li>
+                <li class="main-navigation__item">
+                    <img src="img/icons/advantages.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-advantages">Преимущества</a>
+                </li>
+                <li class="main-navigation__item last-nav-li">
+                    <img src="img/icons/contacts.svg" alt="" class="nav-icon">
+                    <a href="index.html#main-contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button role="button" class="header__enter-btn">Вход</button>
+
+        <div class="header__user-container">
+            <div class="dropdown">
+                <div class="user btndown">
+                    <img src="img/default_avatar.png" alt="" class="header__user-photo">
+                    <p class="header__user-name">Олег</p>
+                </div>
+                <ul class="wrapdown">
+                    <li><a href="./lk_client.html">Личный кабинет</a></li>
+                    <li><a href="./add_vacancy.html">Создать вакансию</a></li>
+                    <li><a href="./my_vacancies.html">Мои вакансии</a></li>
+                    <li><a href="./my_requests.html">Мои заявки</a></li>
+                    <li><a href="./index.html">К поиску жилья</a></li>
+                    <li><a href="./index.html">Выйти</a></li>
+                </ul>
+            </div>
+        </div> 
+    </header>
+
     <div class="page-wrapper">
         <section class="add_vacancy-section housing-type">
             <h2 role="heading" class="section-name">Тип жилья</h2>
@@ -165,5 +213,54 @@
         </form>
 
     </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li class="foolter-col-list__item"><a href="#">Личный кабинет</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Служба поддержки</a></li>
+                    </ul>
+                </div>
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li>Арендодателям</li>
+                        <li class="foolter-col-list__item"><a href="#">Как сдавать свое жилье</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Разместить объявление</a></li>
+                    </ul>
+                </div>
+                <div class="foolter-col">
+                    <ul class="foolter-col-list">
+                        <li>Гостям</li>
+                        <li class="foolter-col-list__item"><a href="#">Как бронировать жилье</a></li>
+                        <li class="foolter-col-list__item"><a href="#">Гарантии заселения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-line"/>
+            <div class="footer-bottom">
+                <div class="copy">
+                    &copy; 2019. DAILY rental housing
+                </div>
+                <ul class="socials-list">
+                    <li class="socials-list__item">
+                        <a href="https://vk.com" target="_blank">
+                            <img src="img/icons/socials/vk.png" alt="vk">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="img/icons/socials/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="img/icons/socials/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

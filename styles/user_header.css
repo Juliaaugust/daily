@@ -1,0 +1,46 @@
+/* header */
+
+.header__user-container {
+    display: flex;
+}
+
+.header__enter-btn {
+    display: none;
+}
+
+.btndown {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.wrapdown {
+    display: none;
+    position: absolute;
+    background: linear-gradient(0deg, #58324a 0%, #7e4b6a 100%);
+    min-width: 170px;
+    right: 0;
+    border-radius: 5px;
+}
+
+.wrapdown a {
+    color: #f8d0a3; 
+    padding: 10px;
+    display: block;
+}
+
+.wrapdown a:hover {
+    background: linear-gradient(0deg, #7e4b6a 0%, #e08ab1 100%);
+    color: #3d0d29;
+}
+
+.dropdown:hover .wrapdown {
+    display: block;
+}
+
+.dropdown:hover .header__user-name {
+    color: #c9759b;
+}
